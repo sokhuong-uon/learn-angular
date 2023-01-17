@@ -8,7 +8,11 @@
 		>
 			<div class="w-full relative h-full bg-zinc-100 rounded-lg p-3">
 				<h3 class="text-4xl font-semibold">
-					<a href="" [title]="product.name + ' detail'">
+					<a
+						[routerLink]="['/products', product.id]"
+						[title]="product.name + ' detail'"
+						class="hover:underline"
+					>
 						{{ product.name }}
 					</a>
 				</h3>
