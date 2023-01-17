@@ -1,11 +1,18 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
-</a>
+<header class="w-screen relative h-20 bg-zinc-600">
+	<nav class="w-full h-full flex items-center justify-between px-4 sm:px-8">
+		<a [routerLink]="['/']" class="w-48 relative">
+			<h1
+				class="w-full flex items-center rounded-full justify-center bg-black/10 h-14 text-3xl"
+			>
+				My Store
+			</h1>
+		</a>
 
-<a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
+		<a
+			class="w-40 bg-white text-black h-14 rounded-full border flex items-center justify-evenly"
+		>
+			<i class="material-icons">shopping_cart</i>
+			Checkout
+		</a>
+	</nav>
+</header>
