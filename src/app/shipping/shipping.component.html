@@ -1,0 +1,11 @@
+<h3 class="flex items-center w-full h-12 px-8">Shipping Prices</h3>
+
+<section class="w-full px-8">
+	<div
+		*ngFor="let shipping of shippingCosts | async"
+		class="flex items-center justify-between w-48 h-12 p-2 m-3 rounded-lg bg-white/20"
+	>
+		<span>{{ shipping.type }}</span>
+		<span>{{ shipping.price | currency }}</span>
+	</div>
+</section>
