@@ -1,15 +1,16 @@
-<header class="w-screen relative h-20 bg-zinc-600">
-	<nav class="w-full h-full flex items-center justify-between px-4 sm:px-8">
-		<a [routerLink]="['/']" class="w-48 relative">
+<header class="relative w-screen h-20 bg-zinc-600">
+	<nav class="flex items-center justify-between w-full h-full px-4 sm:px-8">
+		<a [routerLink]="['/']" class="relative w-48">
 			<h1
-				class="w-full flex items-center rounded-full justify-center bg-black/10 h-14 text-3xl"
+				class="flex items-center justify-center w-full text-3xl rounded-full bg-black/10 h-14"
 			>
-				My Store
+				Apple Store
 			</h1>
 		</a>
 
 		<a
-			class="w-40 bg-white text-black h-14 rounded-full border flex items-center justify-evenly"
+			routerLink="/cart"
+			class="flex items-center w-40 text-black bg-white border rounded-full h-14 justify-evenly"
 		>
 			<i class="material-icons">shopping_cart</i>
 			Checkout
